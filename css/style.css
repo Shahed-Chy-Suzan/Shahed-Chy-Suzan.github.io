@@ -271,7 +271,7 @@ select {
 }
 
 .aside .logo a {
-    font-size: 40px;
+    font-size: 20px;
     color: #302e4d;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -393,8 +393,11 @@ select {
 }
 
 .aside .copyright-text {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
     font-size: 13px;
-    color: #7d7d7d;
+    color: #3a3a3a;
 }
 
 /* Home */
@@ -416,12 +419,16 @@ select {
     border: 8px solid #ffffff;
 }
 
+.home .intro .hello{
+  margin-top: 20px;
+}
+
 .home .intro h1 {
     font-size: 30px;
     color: #302e4d;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    margin: 20px 0 5px;
+    margin: 0px 0 5px;
 }
 
 .home .intro p {
@@ -444,6 +451,7 @@ select {
     line-height: 35px;
     color: #ffffff;
     margin: 0 4px;
+    margin-bottom: 8px;
     border-radius: 50%;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
@@ -452,7 +460,7 @@ select {
 
 .home .intro .social-links a:hover {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 /* About Section */

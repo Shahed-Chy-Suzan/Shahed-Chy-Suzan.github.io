@@ -178,3 +178,17 @@ function asideSectionTogglerBtn() {
         allSection[i].classList.toggle('open');
     }
 }
+
+
+//------------- iTyped jQuery plugin code---------------------------
+window.ityped.init(document.querySelector(".iTypedPlugin"), {
+  strings: [
+    "Software Engineer",
+    "Self Taught Web Tech Enthusiast",
+    "Professional Web Developer",
+  ],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+});
