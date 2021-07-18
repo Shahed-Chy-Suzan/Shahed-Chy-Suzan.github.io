@@ -1037,6 +1037,7 @@ select {
 .blog .blog-item-inner .blog-img {
     position: relative;
     overflow: hidden;
+    border-bottom: .5px solid #cacaca;
 }
 
 .blog .blog-item-inner .blog-img img {
@@ -1081,7 +1082,6 @@ select {
     color: #504e70;
     font-weight: 400;
     margin-bottom: 15px;
-
 }
 
 .blog .blog-item-inner .blog-info .blog-tags {
