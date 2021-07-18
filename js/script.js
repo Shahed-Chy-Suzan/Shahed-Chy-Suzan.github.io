@@ -184,8 +184,9 @@ function asideSectionTogglerBtn() {
 window.ityped.init(document.querySelector(".iTypedPlugin"), {
   strings: [
     "Software Engineer",
-    "Self Taught Web Tech Enthusiast",
-    "Professional Web Developer",
+    "Open Source Fanatic",
+    "Web Tech Enthusiast",
+    "Full Stack Web Developer",
   ],
   loop: true,
   typeSpeed: 100,
