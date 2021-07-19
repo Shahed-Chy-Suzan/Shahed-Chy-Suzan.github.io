@@ -186,7 +186,7 @@ window.ityped.init(document.querySelector(".iTypedPlugin"), {
     "Software Engineer",
     "Open Source Fanatic",
     "Web Tech Enthusiast",
-    "Full Stack Web Developer",
+    "Web Developer",
   ],
   loop: true,
   typeSpeed: 100,
