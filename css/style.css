@@ -1258,6 +1258,7 @@ body.dark .aside .nav li a {
 
 body.dark .contact .contact-form .form-item .form-control,
 body.dark .contact .contact-info-item p,
+body.dark .contact .contact-info-item a,
 body.dark .blog .blog-item-inner .blog-info .blog-tags,
 body.dark .blog .blog-item-inner .blog-info .blog-description,
 body.dark .service .service-item .service-item-inner p,
@@ -1267,7 +1268,8 @@ body.dark .about .about-content .skills .skill-item .skill-percent,
 body.dark .about .about-content .personal-info .info-item p span,
 body.dark .about .about-content .about-text p,
 body.dark .home .intro p,
-body.dark .home .intro span {
+body.dark .home .intro span,
+body.dark .aside .copyright-text {
     color: #e9e9e9;
 }
 
