@@ -817,6 +817,7 @@ select {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
+    height: 250px;
     display: block;
 }
 
@@ -824,6 +825,7 @@ select {
     position: absolute;
     left: 0;
     top: 0;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
@@ -856,6 +858,21 @@ select {
     opacity: 1;
 }
 
+.portfolio .portfolio-item .portfolio-info p{
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.portfolio .portfolio-item-inner:hover .portfolio-info p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 .portfolio .portfolio-item .portfolio-info .icon {
     height: 40px;
     width: 40px;
@@ -882,7 +899,37 @@ select {
     line-height: 40px;
 }
 
-/* Lightbox */
+.portfolio .portfolio-item .portfolio-info .icon-2 {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.portfolio .portfolio-item-inner:hover .icon-2 {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-info .icon-2 .fa {
+  line-height: 40px;
+}
+
+
+
+
+
+/*----------- Lightbox ---------------*/
 .lightbox {
     position: fixed;
     left: 0;
