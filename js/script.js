@@ -1,3 +1,5 @@
+
+// Preloader
 window.addEventListener('load', function () {
     document.querySelector('.preloader').classList.add('opacity-0');
 
@@ -89,7 +91,8 @@ lightbox.addEventListener('click', function (event) {
     }
 });
 
-// Aside Navbar
+
+//-------------------------------- Aside Navbar -------------------------------------------------
 const nav = document.querySelector('.nav'),
     navList = nav.querySelectorAll('li'),
     totalNavList = navList.length,
@@ -152,7 +155,7 @@ function updateNav(element) {
     }
 }
 
-// Hire me 
+//------------------------------- Hire me -------------------------------------------------------
 document.querySelector('.hire-me').addEventListener('click', function () {
     const sectionIndex = this.getAttribute('data-section-index');
     showSection(this);
@@ -179,8 +182,11 @@ function asideSectionTogglerBtn() {
     }
 }
 
+//=====================//=================//==================//====================//===================//==================//======================//=====================//====================//
 
-//------------- iTyped jQuery plugin code---------------------------
+
+
+//--------------------- iTyped jQuery plugin code ------------------------------------
 window.ityped.init(document.querySelector(".iTypedPlugin"), {
   strings: [
     "Software Engineer",
@@ -193,3 +199,31 @@ window.ityped.init(document.querySelector(".iTypedPlugin"), {
   backSpeed: 100,
   backDelay: 1000,
 });
+
+//------------------------- Dark Mode Toggle Button ---------------------------
+var isDark = true;
+const toggleSwitch = document.querySelector(".toggle-style-switcher");
+toggleSwitch.addEventListener("click", function () {
+  if (isDark) {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    // Add Light Theme in LocalStorage
+    localStorage.setItem("theme", "dark")
+  } else {
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    localStorage.removeItem("theme");
+  }
+  isDark = !isDark;
+})
+
+
+// Get Theme From Local Storage while Toggle Switch is Clicked
+function latestTheme() {
+  if (localStorage.getItem("theme")) {
+    document.body.classList.add('dark');
+    toggleSwitch.checked = true;
+  }
+}
+// Initialize the localstorage
+latestTheme();
