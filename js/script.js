@@ -200,7 +200,7 @@ window.ityped.init(document.querySelector(".iTypedPlugin"), {
   backDelay: 1000,
 });
 
-//------------------------- Dark Mode Toggle Button ---------------------------
+//------------------------- Dark Mode Toggle Button // Dark Mode Swithcher ---------------------------//
 var isDark = true;
 const toggleSwitch = document.querySelector(".toggle-style-switcher");
 toggleSwitch.addEventListener("click", function () {
@@ -216,7 +216,6 @@ toggleSwitch.addEventListener("click", function () {
   }
   isDark = !isDark;
 })
-
 
 // Get Theme From Local Storage while Toggle Switch is Clicked
 function latestTheme() {
