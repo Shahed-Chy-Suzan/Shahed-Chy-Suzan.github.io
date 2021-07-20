@@ -1,5 +1,5 @@
 
-// Preloader
+//---------------- Preloader -----------------------------------
 window.addEventListener('load', function () {
     document.querySelector('.preloader').classList.add('opacity-0');
 
@@ -7,6 +7,7 @@ window.addEventListener('load', function () {
         document.querySelector('.preloader').style.display = 'none';
     }, 1000)
 });
+
 
 // Portfolio Item Filter
 const filterContainer = document.querySelector('.portfolio-filter'),
@@ -195,8 +196,8 @@ window.ityped.init(document.querySelector(".iTypedPlugin"), {
     "Web Developer",
   ],
   loop: true,
-  typeSpeed: 100,
-  backSpeed: 100,
+  typeSpeed: 50,
+  backSpeed: 50,
   backDelay: 1000,
 });
 
