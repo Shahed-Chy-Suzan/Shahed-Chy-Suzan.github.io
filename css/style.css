@@ -1332,7 +1332,9 @@ color: #00c88f;
 }
 
 
-
+.greenMyAdded{
+  color: #72b262 !important;
+}
 
 /*------------------------------------ Responsive --------------------------------------*/
 @media (max-width:1199px) {
