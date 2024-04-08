@@ -1,12 +1,12 @@
 
 //---------------- Preloader -----------------------------------
-window.addEventListener('load', function () {
-    document.querySelector('.preloader').classList.add('opacity-0');
+// window.addEventListener('load', function () {
+//     document.querySelector('.preloader').classList.add('opacity-0');
 
-    setTimeout(() => {
-        document.querySelector('.preloader').style.display = 'none';
-    }, 1000)
-});
+//     setTimeout(() => {
+//         document.querySelector('.preloader').style.display = 'none';
+//     }, 1000)
+// });
 
 
 // Portfolio Item Filter
